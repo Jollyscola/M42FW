@@ -40,77 +40,52 @@ export class driver implements EventListenerObject
 
    private graficData() : void
    {
-       var labelFormatter = function(value:number) {
-        console.log(value);
-         let val = Math.abs(value);
-         let grafic = "";
-         if (val >= 1000000) {
-            grafic = (val / 1000000).toFixed(1) + " M";
-         }
-         return grafic;
-       };
+      console.log(this.resutalt.data)
+      var options = {
+        series: [{
+          name: "Driver1",
+          data: [10, 15, 17, 21, 25, 32, 37, 41, 50]
+      },
+      {
+          name: "Driver2",
+          data: [7, 21, 25, 31, 42, 45, 49, 52, 70]
+      },
+      {
+        name: "Driver3",
+        data: [2, 5, 8, 14, 19, 14, 21, 26, 30]
+    }
+    ],
+        chart: {
+        height: 350,
+        type: 'line',
+        zoom: {
+          enabled: false
+        }
+      },
+      dataLabels: {
+        enabled: false
+      },
+      stroke: {
+        curve: 'straight'
+      },
+      title: {
+        text: 'Drivers',
+        align: 'center'
+      },
+      grid: {
+        row: {
+          colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+          opacity: 0.5
+        },
+        
+      },
+      xaxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+      }
+      };
 
-       var options = {
-         chart: {
-           height: 350,
-           type: "line",
-           zoom: {
-             enabled: false
-           }
-         },
-         dataLabels: {
-           enabled: false
-         },
-         stroke: {
-           curve: "straight"
-         },
-         series: [
-           {
-             name: "first drive",
-             data: this.resutalt.data.cards.grafic
-           },
-           {
-             name: "sec drive",
-             data: this.resutalt.data.cards.grafic
-           }
-         ],
-       
-         title: {
-           text: "Drive Scale",
-           align: "left"
-         },
-         markers: {
-           size: 0
-         },
-         xaxis: {
-           type: "datetime"
-         },
-         yaxis: [
-           {
-             min: 1000000,
-             max: 500000000,
-             tickAmount: 4,
-             logarithmic: true,
-             seriesName: "Logarithmic",
-             labels: {
-               formatter: labelFormatter,
-             }
-           },
-           {
-             min: 1000000,
-             max: 500000000,
-             opposite: true,
-             tickAmount: 4,
-             seriesName: "Linear",
-             labels: {
-               formatter: labelFormatter
-             }
-           }
-         ]
-       };
-       
-       let driver:ApexCharts = new ApexCharts(document.querySelector("#driver-grafit"), options);
-       driver.render();
+      var chart = new ApexCharts(document.querySelector("#driver-grafit"), options);
+      chart.render();
    }
    
    private CircleData() : void
@@ -122,7 +97,7 @@ export class driver implements EventListenerObject
       {
          this.options = {
             chart: {
-                height: 250,
+                height: 200,
                 type: 'radialBar',
             },
             series: [value[i].space],

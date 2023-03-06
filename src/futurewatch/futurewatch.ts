@@ -33,8 +33,8 @@ export class futurewatch implements EventListenerObject
    {
       this.resutalt = await this.Json();
 
-      this.CircleData();
-      this.graficData();
+      // this.CircleData();
+      // this.graficData();
       return (true);
    }
 

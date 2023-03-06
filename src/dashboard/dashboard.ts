@@ -33,8 +33,8 @@ export class dashboard implements EventListenerObject
    {
       this.resutalt = await this.Json();
 
-      this.CircleData();
-      this.graficData();
+      // this.CircleData();
+      // this.graficData();
       return (true);
    }
 
