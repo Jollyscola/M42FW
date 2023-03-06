@@ -9,7 +9,7 @@
 </head>
 <body>
    <nav class="primary-bg py-4 px-4 h-20 ">
-      <div class="container flex flex-wrap items-center justify-between mx-auto text-{#ffffff}">
+      <div class="container flex flex-wrap items-center justify-between mx-auto text-white">
          <div class="navbar-brand px-2 sm:px-4 py-1">
             <a href="../dashboard/dashboard.html">
                <div class="header-image"></div>
@@ -29,8 +29,8 @@
     <label class="flex justify-end mt-auto mb-auto">Zabbix Meeting Denmark 2023 - Join us to Ballerup on February 9th to see what's coming next</label>
     <span class="flex justify-end mr-4 mt-auto mb-auto text-gray-200 hover:text-gray-50 cursor-pointer scale-105 transition">x</span>
    </nav>
-   <div class="grid  w-full col-span-2 md:grid-cols-[300px_1fr_50px] max-sm:grid-cols-[0_1fr_0] ">
-      <aside id="sidebar-multi-level-sidebar" class="h-screen transition-transform -translate-x-full sm:translate-x-0 col-end-2 mr-10 max-md:w-10" aria-label="Sidebar">
+   <div class="grid  w-full col-span-2  max-sm:grid-cols-[0_1fr_0]  max-xl:grid-cols-[50px_1fr_50px] xl:grid-cols-[300px_1fr_50px] ">
+      <aside id="sidebar-multi-level-sidebar" class="h-screen transition-transform -translate-x-full sm:translate-x-0 col-end-2 mr-10 max-xl:w-10" aria-label="Sidebar">
          <div class="h-full px-1 py-10 overflow-y-auto bg-gray-50 dark:bg-gray-800">
             <ul class="space-y-2">
                <li>
@@ -131,16 +131,70 @@
                            <label id="title" class="text-xs">Bounce Rate</label>
                         
                            <label id="contest" class="text-3xl">21%</label>
+                           <label id="grafic" class="text-xs text-red-500">7% inscease</label>
                         </div>
                         <div class=" border-black text-base shadow-lg p-5 rounded-lg"><label id="title">Media Query</label></div>
                   </div>
                </a>
             </div> 
          </section>
+         <section  class="mb-5">
+            <div class="flex justify-between">
+               <div class="">
+                  <h1 class="font-normal">Instanes</h1>
+                  <label class="text-xs">A summary of the status of all SQL instancees monitored by future Watch</label>
+               </div>
+                  <div class="flex-grow-0 items-end justify-end flex ">
+                     <button class="primary-bg text-white p-4 text-xs h-4 flex items-center rounded">Add Instace</button>
+                  </div>
+            </div>
+         </section>
          <section>
-            <div class="grid bg-white h-50">
-               <div id="futurewatch-grafit"></div>
-            </div> 
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 overflow-x-auto relative">
+               <thead class="text-xs text-gray-700 bg-gray-50 dark:bg-gray-700 :dark:text-gray-400">
+                  <tr>
+                     <th scope="col" class="px-6 py-3  max-lg:hidden">Server/instance</th>
+                     <th scope="col" class="px-6 py-3  max-lg:hidden">OS Mem</th>
+                     <th scope="col" class="px-6 py-3  max-lg:hidden">OS Disk</th>
+                     <th scope="col" class="px-6 py-3  max-lg:hidden">Version</th>
+                     <th scope="col" class="px-6 py-3  max-lg:hidden">SP/CU</th>
+                     <th scope="col" class="px-6 py-3  max-lg:hidden">Backup</th>
+                     <th scope="col" class="px-6 py-3  max-lg:hidden">Jobs</th>
+                     <th scope="col" class="px-6 py-3  max-lg:hidden">DBCC</th>
+                     <th scope="col" class="px-6 py-3  max-lg:hidden">FIle Info</th>
+                     <th scope="col" class="px-6 py-3  max-lg:hidden"></th>
+                  </tr>
+               </thead>
+               <tbody class="bg-gray-50 px-2">
+                  <tr class="text-green-600 px-6 py-4 font-xs whitespace-text-cnowrap text-center dark:text-white ">
+                     <td scope="row" class="text-black font-bold">Reports2014 / MSSQLSERVER</td>
+                     <td class="px-6 py-4 max-lg:hidden">OK</td>
+                     <td class="px-6 py-4 max-lg:hidden">Ok</td>
+                     <td class="px-6 py-4 max-lg:hidden">Ok</td>
+                     <td class="px-6 py-4 max-lg:hidden">Ok</td>
+                     <td class="px-6 py-4 max-lg:hidden text-yellow-400">Info</td>
+                     <td class="px-6 py-4 max-lg:hidden">Ok</td>
+                     <td class="px-6 py-4 max-lg:hidden">Ok</td>
+                     <td class="px-6 py-4 max-lg:hidden">Ok</td>
+
+                     <td class="px-6 py-4 primary-color max-lg::visited lg:hidden">See details</td>
+                     <td class="px-6 py-4 primary-color">See mere</td>
+                  </tr>
+                  <tr class="text-green-600 px-6 py-4 font-xs whitespace-text-cnowrap text-center dark:text-white">
+                     <td scope="row" class="text-black font-bold">SCCM-SQL01/MSSQLSERVER</td>
+                     <td class="px-6 py-4 max-lg:hidden">OK</td>
+                     <td class="px-6 py-4 max-lg:hidden">Ok</td>
+                     <td class="px-6 py-4 max-lg:hidden">Ok</td>
+                     <td class="px-6 py-4 max-lg:hidden">Ok</td>
+                     <td class="px-6 py-4 max-lg:hidden">Ok</td>
+                     <td class="px-6 py-4 max-lg:hidden">Ok</td>
+                     <td class="px-6 py-4 max-lg:hidden">Ok</td>
+                     <td class="px-6 py-4 max-lg:hidden">Ok</td>
+                     <td class="px-6 py-4 primary-color max-lg::visited lg:hidden">See details</td>
+                     <td class="px-6 py-4 primary-color">See mere</td>
+                  </tr>
+            </tbody>
+            </table>
          </section>
       </div>
    

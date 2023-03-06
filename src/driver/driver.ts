@@ -40,8 +40,8 @@ export class driver implements EventListenerObject
 
    private graficData() : void
    {
-      console.log(this.resutalt.data)
-      var options = {
+
+      let options = {
         series: [{
           name: "Driver1",
           data: [10, 15, 17, 21, 25, 32, 37, 41, 50]
@@ -69,7 +69,7 @@ export class driver implements EventListenerObject
         curve: 'straight'
       },
       title: {
-        text: 'Drivers',
+        text: 'Drivers %',
         align: 'center'
       },
       grid: {
