@@ -1,0 +1,33 @@
+.logreg_botton
+{
+   width:220px;
+   margin: 35px auto;
+   position:relative;
+   box-shadow: 0 0 20px 9px #ff61241f;
+   
+   .active
+   {
+      color:white;
+   }
+   
+   .toggle_btn
+   {
+      border: 0;
+      cursor: pointer;
+      padding: 10px 30px;
+      position: relative;
+      background: transparent;
+   }
+}
+
+#btn
+{
+   top:0;
+   left:0;
+   width:110px;
+   height: 100%;
+   position: absolute;
+   border-radius: 30px;
+   transition: ease 0.5s;
+   background: linear-gradient(to right,#6060f0,#35357b);
+}

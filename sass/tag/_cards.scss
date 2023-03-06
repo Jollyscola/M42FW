@@ -1,0 +1,30 @@
+.cards
+{
+   width:100%;
+   display:grid;
+  
+   justify-content: center;
+   &_inline
+   {
+      gap:10px;
+      display:inline-flex;
+      flex-wrap: nowrap;
+   }
+
+   .card
+   {
+      &_title
+      {
+         display:flex;
+         font-weight: 600;
+         justify-content: center;
+      }
+      width:200px;
+      height: 200px;
+      #chart
+      {
+         width:200px;
+         height: 200px;
+      }
+   }
+}

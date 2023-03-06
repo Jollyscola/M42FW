@@ -1,0 +1,28 @@
+:root
+{
+   --white:#fff;
+   --black1: #222;
+   --black2: #999;
+   --gray: #f5f5f5;
+   --primary-color: #7747ea;
+}
+
+
+*
+{
+   margin:0;
+   padding:0;
+}
+
+body
+{
+   height: 100vh;
+   font-size: 16px;
+   overflow: hidden;
+   box-sizing: border-box;
+   background-color: lightgray;
+   font-family: Montserrat, sans-serif;
+}
+
+
+

@@ -1,0 +1,26 @@
+.header
+{
+	height: 100px;
+}
+
+.primary-bg
+{
+	background-color: var(--primary-color);
+}
+
+.primary-color
+{
+	color: var(--primary-color);
+}
+
+.header-image
+{
+			height: 50px;
+			width:150px;
+			display: block;
+			border-radius: 20px;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-image:  url(../../images/miracle42-logo-linkedin.png);
+}

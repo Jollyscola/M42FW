@@ -1,0 +1,38 @@
+.container
+{
+   width:100%;
+   position: relative;
+}
+
+main
+{
+   left:200px;
+   min-height: 100vh;
+   padding:36px 30px;
+   position: absolute;
+   transition: 0.5s ease;
+   width: calc(100% - 200px);
+   background-color: var(--white);
+  
+   .breadcrubs
+   {
+      display:flex;
+      grid-gap:6px;
+
+      li,
+      li a
+      {
+         font-size:14px;
+         list-style: none;
+         color:var(--blue);
+      }
+   }
+
+   .title
+   {
+      font-size:24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+   }
+}
+

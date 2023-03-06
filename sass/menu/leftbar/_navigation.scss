@@ -1,0 +1,106 @@
+.navigation
+   {
+      width:200px;
+      height: 100%;
+      position: fixed;
+      overflow: hidden;
+      transition: 0.5s ease;
+      background-color: var(--blue);
+      border-left:10px solid var(--blue);
+
+      ul
+      {
+         top:0;
+         left:0;
+         width:100%;
+         margin-top:40px;
+         position: absolute;
+         li
+         {
+            width:100%;
+            list-style: none;
+            position: relative;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+
+            &:hover,
+            &.hovered
+            {
+               background-color: var(--white);
+
+               // curve outside
+               a::before
+               {
+                  right:0;
+                  top:-50px;
+                  content:'';
+                  width:50px;
+                  height: 50px;
+                  border-radius: 50%;
+                  position: absolute;
+                  pointer-events: none;
+                  box-shadow: 35px 35px 0 10px var(--white);
+                  background-color: transparent;
+               }
+
+               a::after
+               {
+                  right:0;
+                  bottom:-50px;
+                  content:'';
+                  width:50px;
+                  height: 50px;
+                  border-radius: 50%;
+                  position: absolute;
+                  pointer-events: none;
+                  box-shadow: 35px -35px 0 10px var(--white);
+                  background-color: transparent;
+               }
+            }
+
+            a
+            {
+               width:100%;
+               display:flex;
+               position: relative;
+               color: var(--white);
+               text-decoration: none;
+
+           
+
+               .icon
+               {
+                  height: 60px;
+                  display:block;
+                  min-width: 60px;
+                  line-height: 70px;
+                  position: relative;
+                  text-align: center;
+                  pointer-events: none;
+                  
+                  ion-icon
+                  {
+                   font-size:1.75em;
+                  }
+               }
+               .title
+               {
+                  height: 60px;
+                  display:block;
+                  padding:0 10px;
+                  line-height:60px;
+                  position: relative;
+                  text-align: start;
+                  white-space: nowrap;
+                  pointer-events: none;
+               }
+            }
+
+            &:hover a,
+            &.hovered a
+            {
+               color: var(--blue);
+            }            
+         }
+      }
+   }

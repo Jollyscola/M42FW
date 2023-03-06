@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<head>
+   <!-- <meta charset="UTF-8"> -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+   <link rel="stylesheet" href="../../css/styles.css">
+   <link rel="stylesheet" href="../../dist/output.css">
+</head>
+</head>
+<body>
+   <nav class="primary-bg py-4 px-4 h-20 ">
+      <div class="container flex flex-wrap items-center justify-between mx-auto text-{#ffffff}">
+         <div class="navbar-brand px-2 sm:px-4 py-1">
+            <a href="../dashboard/dashboard.html">
+               <div class="header-image"></div>
+            </a>
+         </div>
+         <div class="text-white dark:hover:text-gray text-flex p-2 transition flex gap-5 items-center ">
+            <div class="align-middle h-7 w-7 bg-white text-gray-400 rounded-full flex items-center justify-center">
+               <ion-icon name="notifications-outline" class="h-6 w-6"></ion-icon>
+            </div>
+            <div class="align-middle h-8 w-8 flex items-center justify-center">
+               <img src="../../images/profil.png" class="rounded-full" alt="profit">
+            </div>
+         </div>
+      </div>
+   </nav>
+   <nav class="bg-black h-auto text-white grid-flow-col text-sm grid touch-auto" id="infomations">
+    <label class="flex justify-end mt-auto mb-auto">Zabbix Meeting Denmark 2023 - Join us to Ballerup on February 9th to see what's coming next</label>
+    <span class="flex justify-end mr-4 mt-auto mb-auto text-gray-200 hover:text-gray-50 cursor-pointer scale-105 transition">x</span>
+   </nav>
+   <div class="grid  w-full col-span-2 md:grid-cols-[300px_1fr_50px] max-sm:grid-cols-[0_1fr_0] ">
+      <aside id="sidebar-multi-level-sidebar" class="h-screen transition-transform -translate-x-full sm:translate-x-0 col-end-2 mr-10 max-md:w-10" aria-label="Sidebar">
+         <div class="h-full px-1 py-10 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+            <ul class="space-y-2">
+               <li>
+                  <a href="../dashboard/dashboard.html" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                     <ion-icon name="home-outline" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"></ion-icon>
+                     <span class="ml-3">Dashboard</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"  onclick="document.querySelector('#server-example').classList.contains('hidden') ? document.querySelector('#server-example').classList.remove('hidden') :  document.querySelector('#server-example').classList.add('hidden')">
+                        <ion-icon name="server-outline" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"></ion-icon>
+                        <span class="flex-1 ml-3 text-left whitespace-nowrap">Server Checks</span>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                  </a>
+                  <ul id="server-example" class="hidden py-2 space-y-2 server-example">
+                        <li>
+                           <a href="../driver/driver.html" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Overall</a>
+                        </li>
+
+                  </ul>
+               </li>
+               <li>
+                  <a class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700" onclick="document.querySelector('#futurewatch-example').classList.contains('hidden') ? document.querySelector('#futurewatch-example').classList.remove('hidden') :  document.querySelector('#futurewatch-example').classList.add('hidden')">
+                     <ion-icon name="cloudy-outline"  class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"></ion-icon>
+                     <span class="flex-1 ml-3 whitespace-nowrap"  >Future Watch</span>
+                     <ion-icon name="chevron-down-outline"></ion-icon>
+                  </a>
+                     <ul id="futurewatch-example" class="hidden py-2 space-y-2">
+                        <li>
+                           <a href="../futurewatch/futurewatch.html" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Overall</a>
+                        </li>
+                     </ul>        
+               </li>
+               <li>
+                  <a class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"  onclick="document.querySelector('#hosting-example').classList.contains('hidden') ? document.querySelector('#hosting-example').classList.remove('hidden') :  document.querySelector('#hosting-example').classList.add('hidden')">
+                     <ion-icon name="layers-outline" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"></ion-icon>
+                     <span class="flex-1 ml-3 whitespace-nowrap">Hosting Portal</span>
+                     <ion-icon name="chevron-down-outline"></ion-icon>
+                  </a>
+                     <ul id="hosting-example" class="hidden py-2 space-y-2">
+                        <li>
+                           <a href="#" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Products</a>
+                        </li>
+                        <li>
+                           <a href="#" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Billing</a>
+                        </li>
+                        <li>
+                           <a href="#" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Invoice</a>
+                        </li>
+                     </ul>        
+               </li>
+            </ul>
+            <ul class="space-y-2 border-t mt-4 pl-5">
+               <li>
+                  <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                     <span class="flex-1 ml-3 whitespace-nowrap">Users</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                     <span class="flex-1 ml-3 whitespace-nowrap">Products</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                     <span class="flex-1 ml-3 whitespace-nowrap">Sign In</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                     <span class="flex-1 ml-3 whitespace-nowrap">Sign Up</span>
+                  </a>
+               </li>
+            </ul> 
+         </div>
+      </aside>
+      <div class="mt-10 h-auto container max-sm:w-auto">
+         <section class="h-auto mb-10 grid">
+            <div class="bg-red-500 h-auto text-white p-2 rounded relative justify-center grid-flow-row  text-center flex ">
+               <div class="w-full flex flex-nowrap justify-center">
+                  <label class="text-base flex-nowrap flex col-span-9"><p class="font-bold ">Attention:</p> one or more of servers needs a critcal patch!</label>
+               </div>
+               <div >
+                  <button class="right-0 grow-02" type="button">x</button>
+               </div>
+            </div>
+         </section>
+         <section class="h-30 mb-10">
+            <div class="grid">
+                  <div class="bg-white h-50 grid grid-cols-3 relative w-auto p-10 gap-4 rounded-lg  max-sm:grid-cols-1">
+                     <div class=" border-black text-base shadow-lg p-5 rounded-lg grid">
+                        <label class="font-normal text-center">Driver 1</label>
+                           <div id="driver1"></div>
+                     </div>
+                     <div class=" border-black text-base shadow-xl p-5 rounded-lg grid">
+                        <label class="font-normal text-center">Driver 2</label>
+                        <div id="driver2"></div>
+                     </div>
+                     <div class="border-black text-base shadow-lg p-5 rounded-lg grid">
+                        <label class="font-normal text-center" >Driver 3</label>
+                        <div id="driver3"></div>
+                     </div>
+                  </div>
+            </div> 
+         </section>
+         <section>
+            <div class="grid bg-white h-50">
+               <div id="driver-grafit"></div>
+            </div> 
+         </section>
+      </div>
+   
+   </div>
+   <script type="module"  src="../../dist/index.js" ></script>
+   <!-- ===== ionicons ======== -->
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>

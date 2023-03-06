@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login</title>
+   <link rel="stylesheet" href="../../css/styles.css">
+  
+<body>
+   
+   <div class="container_logreg">
+      <div class="logreg_botton">
+         <div id="btn"></div>
+         <button type="button" class="toggle_btn active" id="toggle" name="login">Login</button>
+         <button type="button" class="toggle_btn" id="toggle" name="register">Register</button>
+      </div>
+      <div class="logreg" method="post">
+         <div class="login">
+            <h1>Login</h1>
+            <form action="../dashboard/dashboard.html" >
+               <div class="txt_field">
+                  <input type="text" required>
+                  <span></span>
+                  <label for="company">Company</label>
+               </div>
+               <div class="txt_field">
+                  <input type="text" required>
+                  <span></span>
+                  <label for="username">Username</label>
+               </div>
+               <div class="txt_field">
+                  <input type="text" required>
+                  <span></span>
+                  <label for="password">Password</label>
+               </div>
+               <input type="submit" value="Login">
+            </form>
+         </div>
+         <div class="register">
+            <h1>Register</h1>
+            <form>
+               <div class="txt_field">
+                  <input type="text" required>
+                  <span></span>
+                  <label for="createCompany">Company</label>
+               </div>
+               <div class="txt_field">
+                  <input type="text" required>
+                  <span></span>
+                  <label for="createUsername">Username</label>
+               </div>
+               <div class="txt_field">
+                  <input type="text" required>
+                  <span></span>
+                  <label for="createPassword">Password</label>
+               </div>
+               <input type="submit" value="Signup">
+            </form>
+         </div>
+      </div>
+   </div>
+   <script type="module"  src="../../dist/index.js" ></script>
+</body>
+</html>

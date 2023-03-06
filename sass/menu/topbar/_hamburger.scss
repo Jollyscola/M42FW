@@ -1,0 +1,19 @@
+.hamburger
+{
+   top: 2px; 
+   left: 2px;
+   width:50px;
+   display:flex;
+   height: 50px;
+   cursor: pointer;
+   text-align: center;
+   font-size: 25px;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   &:hover
+   {
+      background:black;
+   }
+}
+
