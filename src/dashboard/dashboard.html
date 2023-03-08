@@ -30,8 +30,11 @@
     <span class="flex justify-end mr-4 mt-auto mb-auto text-gray-200 hover:text-gray-50 cursor-pointer scale-105 transition">x</span>
    </nav>
    <div class="grid  w-full col-span-2 md:grid-cols-[300px_1fr_50px] max-sm:grid-cols-[0_1fr_0]  max-md:grid-cols-[50px_1fr_50px] ">
-      <aside id="sidebar-multi-level-sidebar" class="h-screen transition-transform -translate-x-full sm:translate-x-0 col-end-2 mr-10 max-md:w-10" aria-label="Sidebar">
-         <div class="h-full px-1 py-10 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+      <aside id="sidebar" class="h-screen transition-transform -translate-x-full sm:translate-x-0 col-end-2 mr-10 max-md:w-10 z-50" aria-label="Sidebar">
+         <div class="h-full px-1 py-5 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+            <div class="space-y-2 h-10 font-normal text-base flex item-end justify-end" onclick="document.querySelector('#sidebar').style.width = '15rem'">
+               <ion-icon name="reorder-four-outline" class="flex-shrink-0 w-6 h-6"></ion-icon>
+            </div>
             <ul class="space-y-2">
                <li>
                   <a href="../dashboard/dashboard.html" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
